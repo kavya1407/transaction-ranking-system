@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transaction Ranking System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Transaction Ranking System</h1>
+
+    <!-- Transaction Form -->
+    <section class="card">
+      <h2>Add Transaction</h2>
+      <form id="transactionForm">
+        <input type="text" id="userId" placeholder="User ID" required />
+        <input type="number" id="amount" placeholder="Amount" required />
+        
+        <select id="type" required>
+          <option value="">Select Type</option>
+          <option value="credit">Credit</option>
+          <option value="debit">Debit</option>
+        </select>
+
+        <input type="text" id="idempotencyKey" placeholder="Idempotency Key" required />
+        <button type="submit">Submit Transaction</button>
+      </form>
+      <p id="transactionResult"></p>
+    </section>
+
+    <!-- Summary -->
+    <section class="card">
+      <h2>Get User Summary</h2>
+      <div class="summary-box">
+        <input type="text" id="summaryUserId" placeholder="Enter User ID" />
+        <button onclick="getSummary()">Get Summary</button>
+      </div>
+      <div id="summaryResult"></div>
+    </section>
+
+    <!-- Ranking -->
+    <section class="card">
+      <h2>Leaderboard</h2>
+      <button onclick="getRanking()">Refresh Ranking</button>
+      <table id="rankingTable">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>User ID</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

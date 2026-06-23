@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form,
+.summary-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+input,
+select {
+  flex: 1;
+  min-width: 150px;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+#transactionResult {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+#summaryResult {
+  margin-top: 15px;
+  background: #f9fafb;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #2563eb;
+  color: white;
+}
