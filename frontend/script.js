@@ -1,4 +1,4 @@
-const BASE_URL = "http://127.0.0.1:8000";
+const BASE_URL = "https://transaction-ranking-system-7szd.onrender.com";
 
 // Add Transaction
 document.getElementById("transactionForm").addEventListener("submit", async (e) => {
